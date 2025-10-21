@@ -50,3 +50,12 @@ main #articles {
     color: #222
 
 }
+
+@media (max-width: 550px) {
+   #title {
+    font-size: 1.2rem;
+   }
+   .nav-bar a {
+    font-size: 1rem;
+   } 
+}
