@@ -62,9 +62,9 @@ main #articles {
 
 @media (max-width: 440px) {
    #title {
-    font-size: 1rem;
+    font-size: .9rem;
    }
    .nav-bar a {
-    font-size: .8rem;
+    font-size: .6rem;
    } 
 }
