@@ -26,6 +26,10 @@ body {
     border-radius: 23px;
 }
 
+.logo h1 a {
+    color: #fff;
+}
+
 .nav-bar {
     padding: 0 1rem;
 }
@@ -51,6 +55,25 @@ main #articles {
 
 }
 
+a {
+    text-decoration: none;
+}
+
+#doc-btn {
+    border-radius: 50%;
+    
+    font-family: "Roboto", sans-serif;
+    padding: .5rem;
+    margin-left: .8rem;
+}
+
+#doc-btn:focus, #doc-btn:hover {
+    border: 1px solid #22ff22;
+    background-image: linear-gradient(to bottom, #22ff22, #ccddcc);
+    color: #fff;
+    cursor: pointer;
+}
+
 @media (max-width: 550px) {
    #title {
     font-size: 1.2rem;
@@ -67,4 +90,9 @@ main #articles {
    .nav-bar a {
     font-size: .6rem;
    } 
+}
+
+#projects {
+    text-align: center;
+    padding: 1em;
 }
