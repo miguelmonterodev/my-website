@@ -2,6 +2,11 @@
 export const newArticles = [
     {
         title: "Learning journal",
+        body: "Today, I have been reading Ethernet Standards. The frame, cables, network appliances: switches",
+        date: "22-10-2025"
+    },
+    {
+        title: "Learning journal",
         body: "Today, I have been refreshing the OSI Model and a little bit of cabling and network topology.",
         date: "21-10-2025"
     },
