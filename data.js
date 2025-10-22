@@ -23,7 +23,7 @@ const projects = [
         img: "./assets/images/password-generator.png", 
         title: "Password Generator", 
         description: "Password generator application built in JavaScript. We will generate a secured password combining 16 random characters (uppercase, lowercase, numbers and symbols).", 
-        link: "./demo-webpages/contact-form/"
+        link: "https://miguelmonterodev.github.io/password-generator/"
     },
 
 ]
