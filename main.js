@@ -21,7 +21,7 @@ newArticles.map((article) => {
 //Render Projects
 projects.map((project) => {
     return sectionProjects.innerHTML += `
-        <img src=${project.img} alt="${project.title} screenshot" >
+        <img src=${project.img} alt="${project.title} screenshot" width="300px">
         <h3>${project.title}</h3>
         <p>${project.description}</p>
         <a href="${project.link}" target="_blank">See project</a>
