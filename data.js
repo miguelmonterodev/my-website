@@ -2,6 +2,11 @@
 export const newArticles = [
     {
         title: "Learning journal",
+        body: "TIA Standards, how to install a physical network: Demarc, MDF, IDF, Patch panels, horizontal run...",
+        date: "23-10-2025"
+    },
+    {
+        title: "Learning journal",
         body: "Today, I have been reading Ethernet Standards. The frame, cables, network appliances: switches",
         date: "22-10-2025"
     },
