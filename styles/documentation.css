@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    background-image: linear-gradient(to bottom, #22ff22, #ccddcc);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+header a {
+    padding: .5rem;
+    color: #333;
+}
+
+header a:focus, header a:hover {
+    font-size: bold;
+    color: #fff;
+}
+
+main {
+    position: relative;
+    top: 135px;
+    z-index: -1;
+}
+
+ul {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+article {
+    padding: 1rem;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+section {
+    padding: 1rem .8rem;
+}
+
+#table-of-content ul {
+    list-style: none;
+}
+

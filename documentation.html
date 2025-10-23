@@ -5,9 +5,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IT Documentation</title>
     <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./styles/documentation.css" />
 </head>
 <body>
-    <a href="/">Home</a>
-    <h1>IT Documentation</h1>
+    <header>
+        <a href="/">Home</a>
+        <a href="#table-of-content">Table of Content</a>
+        <h1>IT Documentation</h1>
+    </header>
+    <main>
+        <section id="table-of-content">
+            <h2>Content</h2>
+            <ul><h3><a href="networks">Networks</a></h2>
+                <li><a href="#osi-model">OSI Model</a></li>
+                <li><a href="#ports-and-protocols">Ports and Protocols</a></li>
+            </ul>
+        </section>
+        <section id="networks">
+            <article id="osi-model">
+                <h3>OSI Model</h3>
+                <p>The OSI (Open Systems Interconnection) model is a conceptual framework that standardizes 
+                    the functions of a communication system into seven distinct layers. 
+                    Each layer has specific responsibilities and interacts with the layers above and below it. 
+                    The OSI model provides a structured approach to understanding 
+                    and designing network protocols and communication systems.
+                </p>
+                <ol>Here's a brief overview of each layer:<br><br>
+                    <li>Physical Layer: The physical layer is responsible for the transmission and reception 
+                        of raw unstructured data bits over a physical medium. 
+                        It defines the electrical, mechanical, and functional characteristics of the physical 
+                        interface between devices.
+                    </li>
+                    <li>Data Link Layer: The data link layer handles the reliable transmission 
+                        of data frames between directly connected nodes over a physical link. 
+                        It provides error detection and correction, flow control, and handles 
+                        access to the physical medium. Ethernet, Wi-Fi, and 
+                        PPP (Point-to-Point Protocol) are examples of data link layer protocols.
+                    </li>
+                    <li>Network Layer: The network layer enables the routing of data packets across 
+                        different networks. It deals with logical addressing and determines the best 
+                        path for data delivery based on network conditions and routing protocols. 
+                        The IP (Internet Protocol) is a key network layer protocol.
+                    </li>
+                    <li>Transport Layer: The transport layer ensures the reliable and orderly 
+                        delivery of data between end systems. It breaks data into smaller segments, 
+                        manages end-to-end communication, and provides error recovery, flow control, 
+                        and congestion control. TCP (Transmission Control Protocol) and UDP (User 
+                        Datagram Protocol) operate at this layer.
+                    </li>
+                    <li>Session Layer: The session layer establishes, manages, and terminates 
+                        communication sessions between applications. It provides synchronization 
+                        and dialog control mechanisms to enable seamless communication between 
+                        devices. This layer also handles session checkpointing and recovery.
+                    </li>
+                    <li>Presentation Layer: The presentation layer is responsible for data 
+                        representation, encryption, compression, and formatting. It ensures that 
+                        data sent by the application layer of one system is understandable by the 
+                        application layer of another system. This layer deals with data syntax and 
+                        semantics.
+                    </li>
+                    <li>Application Layer: The application layer is the closest layer to the end-user 
+                        and provides services directly to user applications. It includes protocols for 
+                        various application-level services such as file transfer, email, web browsing, 
+                        and remote access. Examples of protocols at this layer include HTTP, SMTP, FTP, 
+                        and DNS.
+                    </li>
+                </ol>
+                <p>The key idea behind the OSI model is to separate the complex task of network 
+                    communication into manageable layers, with each layer focused on specific functions. 
+                    This modular approach facilitates interoperability, ease of implementation, and troubleshooting 
+                    in network systems.
+                </p>
+                <p>It's important to note that the OSI model is a conceptual model and does not 
+                    necessarily reflect the exact implementation of all networking systems, which 
+                    often use a hybrid of various layers and protocols. However, the OSI model 
+                    remains a useful reference for understanding network communication and protocols.
+                </p>
+            </article>
+            <article id="ports-and-protocols">
+                <h3>Ports and Protocols</h3>
+                <ul>
+                    <li>File Transfer Protocol (FTP) 20/21: We can log in into the Server and 
+                        get/put a file.
+                    </li>
+                    <li>Secure Shell (SSH) 22 and Telnet: Remote access to another machine. 
+                        SSH is the encrypted version.
+                    </li>
+                    <li>SMTP 25, POP3 110 and IMAP 143/993: Related to mail.</li>
+                    <li>Domain Name System (DNS) 53: Resolve a name to an IP address.</li>
+                    <li>Hypertext Transfer Protocol (HTTP) 80 | Secure(HTTPS) 443: Website protocol.</li>
+                    <li>Server Message Block (SMB also called as Samba): 139 old version; 445 new 
+                        Windows version. We will see this protocol a lot as a pen-tester. 
+                        This relate to a file shares. EternalBlue Petya cyberattack 
+                        <a href="https://en.wikipedia.org/wiki/WannaCry_ransomware_attack">
+                            (Wannacry virus):
+                        </a>
+                    </li>
+                    <li>Dynamic Host Configuration Protocol (DHCP) 67/68: Associate randomly a 
+                        device with an IP address. The opposite of that is the static IP address. 
+                        The DHCP server lease an IP address for a set period of time.
+                    </li>
+                    <li>Trivial File Transfer Protocol (TFTP) 69: Same as FTP but utilise UDP instead 
+                        of TCP.
+                    </li>
+                    <li>Simple Network Management Protocol (SNMP) 161: We can find something in networks 
+                        when we encounter this protocol open.
+                    </li>
+                    <li>RDP (Remote Desktop Protocol): Port 3389 (TCP)</li>
+                    <li>NTP (Network Time Protocol): Port 123 (UDP)</li>
+                    <li>FTPS (FTP over SSL/TLS): Port 990 (TCP)</li>
+                    <li>LDAP (Lightweight Directory Access Protocol): Port 389 (TCP and UDP)</li>
+                    <li>MySQL: Port 3306 (TCP)</li>
+                    </li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
 </body>
 </html>
