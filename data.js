@@ -1,6 +1,11 @@
 //Articles
 export const newArticles = [
     {
+        title: "Stop Learning",
+        body: "Too much learning new concepts. I need a rest. It's time to start building!!",
+        date: "24-10-2025"
+    },
+    {
         title: "Learning journal",
         body: "TIA Standards, how to install a physical network: Demarc, MDF, IDF, Patch panels, horizontal run...",
         date: "23-10-2025"
