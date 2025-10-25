@@ -35,6 +35,12 @@ const projects = [
         description: "Password generator application built in JavaScript. It generates a secured password combining 16 random characters (uppercase, lowercase, numbers and symbols).", 
         link: "https://miguelmonterodev.github.io/password-generator/"
     },
+    {
+        img: "./assets/images/colour-scheme.png", 
+        title: "Colour Scheme", 
+        description: "Colour scheme generator application using the ColorAPI as a RESTful API where we get access to the resources in JSON format. Color schemes are multi-colour combinations chosen according to colour-wheel relationsships.", 
+        link: "https://miguelmonterodev.github.io/colour-scheme-generator/"
+    },
 
 ]
 
