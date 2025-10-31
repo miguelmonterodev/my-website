@@ -1,5 +1,14 @@
-//Articles
+//**************************Articles*******************************************
 export const newArticles = [
+    {
+        title: "IT projects with Raspberry Pi",
+        body: `
+        I bought a Raspberry Pi 4 to start a few hands-on IT projects. 
+        I have changed my way of learning from theory about protocols and programming languages syntax
+        to hardware, software and coding practical experiences about what I would like to make.
+        `,
+        date: "31-10-2025"
+    },
     {
         title: "Stop Learning",
         body: "Too much learning new concepts. I need a rest. It's time to start building!!",
