@@ -11,8 +11,9 @@ newArticles.map((article) => {
         <h3>${article.title}</h3>
         <p>${article.body}</p>
         <time>${article.date}</time>
-        ${article.title == "Learning journal" && 
-            "<button id='doc-btn'>docs</button>"
+        ${article.title == "Learning journal" ? 
+            "<button id='doc-btn'>docs</button>":
+            ""
         }
         <hr />
     `
