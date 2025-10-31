@@ -19,6 +19,7 @@
             <ul><h3><a href="networks">Networks</a></h2>
                 <li><a href="#osi-model">OSI Model</a></li>
                 <li><a href="#ports-and-protocols">Ports and Protocols</a></li>
+                <li><a href="#ip-discovery">IP Discovery</a></li>
             </ul>
         </section>
         <section id="networks">
@@ -117,6 +118,40 @@
                     <li>LDAP (Lightweight Directory Access Protocol): Port 389 (TCP and UDP)</li>
                     <li>MySQL: Port 3306 (TCP)</li>
                     </li>
+                </ul>
+            </article>
+            <article id="ip-discovery">
+                <h3>IP Discovery</h3>
+                <ul>
+                    <li>Discover target IP checking the Router list of devices.</li>
+                        <p>
+                            This will take you to a control panel. 
+                            Browse to the list of connected devices or similar (all routers are different), 
+                            and you should see some devices you recognise. Some devices are detected as 
+                            PCs, tablets, phones, printers, etc. so you should recognise some and 
+                            rule them out to figure out which is your target device IP.
+                        </p>
+                    <li>Discover the IP address of the devices on your network with nmap.</li>
+                        <p>
+                            The Network Mapper command (nmap) is a free and open source tool for network discovery. 
+                            It is available for Linux, macOS, and Windows.
+                        </p>
+                        <p>
+                            To use nmap to scan the devices on your network, 
+                            you need to know the subnet you are connected to. 
+                            First, find the local IP address of the computer you’re using: Linux <em>hostname -I</em>, 
+                            Windows <em>ipconfig /all</em> or go to the <em>Control Panel</em>, then under 
+                            <em>Network and Sharing Center</em>, click <em>View network connections</em>, 
+                            select your active network connection and click 
+                            <em>View status of this connection</em>.
+                        </p>
+                        <p>
+                            Next, scan the whole subnet for other devices. Most local networks use IPv4, 
+                            which uses four numbers with values between 1 and 255 for each IP address.
+                        </p>
+                        <code>sudo nmap -sn $NETWORK_ADDRESS</code>
+                    <li>Using a Smartphone App</li>
+                        <p>The Fing app is a free network scanner for smartphones. It is available for Android and iOS.</p>
                 </ul>
             </article>
         </section>
