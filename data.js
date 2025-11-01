@@ -5,9 +5,17 @@ export const newArticles = [
         body: `
         I bought a Raspberry Pi 4 to start a few hands-on IT projects. 
         I have changed my way of learning from theory about protocols and programming languages syntax
-        to hardware, software and coding practical experiences about what I would like to make.
+        to hardware, software and coding practical projects about what I would like to make.
+        Is it a good idea start with a single-board computer? Why not? It is always a good idea start with something.
+        For a beginner in embedded systems as myself, single-board computers are better for complex projects requiring
+        a full OS and higher-level programming like Python which I know enough to be confidence to start any project.
+        Microcontrollers like Arduino, on the other hand, are suited for single-function tasks with real-time control, and
+        hardware interaction. I love microcontrollers as well as a way to learn fundamental embedded concepts and low-level
+        control of hardware programming in C/C++. My goal using SBC and Microcontrollers is improve my skills about software
+        and hardware, two sides of the same coin: Linux Operating Systems, IT Networks, Programming Languages such as Python, 
+        C/C++, and Electronics building hands-on projects.  
         `,
-        date: "31-10-2025"
+        date: "01-11-2025"
     },
     {
         title: "Stop Learning",
