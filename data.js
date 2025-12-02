@@ -1,6 +1,19 @@
 //**************************Articles*******************************************
 export const newArticles = [
     {
+        title: "Going back to React basics",
+        body: `
+        Why React? Because it makes UIs easier to debug and design. 
+        It allows code reusability, the component-based approach makes it simple 
+        to build web and mobile apps using React Native, allowing the creation of iOS, 
+        Android, and web applications simultaneously.
+        React is SEO friendly as it helps improve SEO by providing Single Page Applications (SPAs) 
+        that can be rendered and indexed by search engines.
+        React minimizes DOM changes by using a virtual DOM resulting in better performance.  
+        `,
+        date: "02-12-2025"
+    },
+    {
         title: "IT projects with Raspberry Pi",
         body: `
         I bought a Raspberry Pi 4 to start a few hands-on IT projects. 
