@@ -59,6 +59,17 @@ a {
     text-decoration: none;
 }
 
+#projects a {
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: #bb00bb;
+}
+
+#projects a:hover, #projects a:focus {
+    color: #880088;
+}
+
 #doc-btn {
     border-radius: 50%;
     
